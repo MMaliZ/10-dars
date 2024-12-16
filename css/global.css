@@ -1,0 +1,197 @@
+@import url("./normalize.css");
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v22-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/poppins-v22-latin-500italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v22-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v22-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  height: 100%;
+  font-weight: 500;
+  font-style: 16px;
+  line-height: 26px;
+  color: #fff;
+  background-color: #ff7979;
+  background-image: url("../images/Group\ 5.png");
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  height: 800px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  justify-content: space-between;
+}
+
+.content__info {
+  flex-shrink: 0;
+  width: 100%;
+  margin-left: 165px;
+  max-width: 525px;
+  height: 220px;
+}
+
+.content__form {
+  margin-top: 121px;
+  width: 100%;
+  max-width: 540px;
+  height: 474px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  flex-shrink: 0;
+}
+
+.content__info__title {
+}
+.content__info__title__item {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  max-width: 525px;
+  height: 131px;
+  font-weight: 700;
+  font-size: 50px;
+
+  line-height: 55px;
+}
+.content__info__title__text {
+  width: 100%;
+  max-width: 525px;
+  height: 78px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.content__form__text {
+  background-color: #5e54a4;
+  width: 100%;
+  max-width: 540px;
+  height: 60px;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 10px;
+  border: none;
+}
+.content__form__elements {
+  width: 100%;
+  max-width: 540px;
+  height: 474px;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 24px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  background-color: #fff;
+}
+.content__form__input {
+  width: 100%;
+  padding-top: 40px;
+  height: 56px;
+  max-width: 460px;
+  border-radius: 10px;
+
+  border: 1px solid #dedede;
+}
+.content__form__input__btn {
+  background-color: #38cc8b;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #fff;
+  width: 100%;
+  max-width: 460px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+}
+
+.content__form__end-text {
+  width: 100%;
+  max-width: 369px;
+  height: 26px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 26px;
+  text-align: center;
+  color: #dedede;
+}
+
+input {
+  padding-left: 12px;
+  padding-bottom: 33px;
+  padding-top: 33px;
+}
+
+.content__form__input:active {
+  border: 1px solid #5e54a4;
+}
